@@ -1,0 +1,35 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#searchResults div {
+  margin-top: 10px;
+  padding: 10px;
+  
+}
+
+.row  {
+  text-align: center;
+
+
+
+}
+body {
+  background-image: url('Mo2.jpg');
+  background-size: cover; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
+  background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
+}
+
+  .myImage {
+    width: 300px;  /* تعيين العرض */
+    height: auto;  /* الارتفاع يتغير تلقائياً للحفاظ على نسب الأبعاد */
+  }
+
