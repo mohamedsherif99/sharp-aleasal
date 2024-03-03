@@ -33,3 +33,46 @@ body {
     height: auto;  /* الارتفاع يتغير تلقائياً للحفاظ على نسب الأبعاد */
   }
 
+
+
+  @media (max-width: 800px) {
+
+  body {
+    font-size: 300%;  }
+  
+  input[type="text"] {
+    width: 100%; /* توسيع خانة البحث لتغطية العرض الكامل للشاشة على الأجهزة المحمولة */
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #searchResults div {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .row {
+    text-align: center;
+  }
+  
+  .myImage {
+    width: 80%;  /* تقليل حجم الصورة لتناسب شاشات الهواتف المحمولة */
+    height: auto; /* الارتفاع يتغير تلقائياً للحفاظ على نسب الأبعاد */
+    margin: auto; /* توسيط الصورة */
+  }
+}
+  /* استعلام إعلامي للشاشات التي عرضها أقل من 600 بكسل */
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    input[type="text"] {
+      width: 90%; /* تعديل عرض خانة البحث لتناسب الشاشات الصغيرة */
+    }
+  
+    .myImage {
+      width: 100%; /* تقليل حجم الصورة أكثر لتناسب الشاشات الصغيرة */
+    }
+  }
+  
