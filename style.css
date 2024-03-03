@@ -44,6 +44,7 @@ body {
     width: 100%; /* توسيع خانة البحث لتغطية العرض الكامل للشاشة على الأجهزة المحمولة */
     padding: 10px;
     margin-bottom: 20px;
+     font-size: 300%;
   }
   
   #searchResults div {
@@ -69,6 +70,7 @@ body {
   
     input[type="text"] {
       width: 90%; /* تعديل عرض خانة البحث لتناسب الشاشات الصغيرة */
+       font-size: 300%;
     }
   
     .myImage {
