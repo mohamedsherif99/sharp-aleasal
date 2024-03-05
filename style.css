@@ -74,6 +74,11 @@ body {
   
 
   @media screen and (max-width: 600px) {
+    body {
+      background-image: url('Mo2.jpg');
+      background-size: 130%; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
+      background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
+    }
     .row {
       flex-direction: column;
       
