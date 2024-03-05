@@ -89,6 +89,10 @@ body {
       right: 10px; /* تعديل الموقع ليتناسب مع الشاشات الصغيرة */
       bottom: 10px;
     }
+    h1{
+
+      font-size: medium;
+    }
   }
   
    
