@@ -2,49 +2,93 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   direction: rtl;
   padding: 20px;
-  background-size: cover;
-  background-position: center;
+  
 }
 
 input[type="text"] {
-  width: 80%;
+  width: 50%;
   padding: 10px;
   margin-bottom: 20px;
+      border: 2px solid #129f4f;
+      position: -webkit-sticky; /* لدعم متصفح Safari */
+      position: sticky;
+      top: 0; /* تعيين المسافة من أعلى الصفحة التي سيُثبت عندها العنصر */
+      z-index: 1000; /* التأكد من أن العنصر يظهر فوق العناصر الأخرى */
+      background-color: white; /* يمكن تعديله ليتناسب مع تصميمك */
 }
 
 #searchResults div {
   margin-top: 10px;
   padding: 10px;
+  
+  
 }
 
-.row {
+.row  {
   text-align: center;
-}
-
-.myImage {
-  max-width: 100%; /* تضمن هذه الخاصية أن الصورة لن تتجاوز عرض الشاشة */
-  height: auto; /* الارتفاع يتغير تلقائيًا للحفاظ على نسب الأبعاد */
-}
-
-/* استعلامات إعلامية لأحجام الشاشات المختلفة */
-@media (max-width: 768px) { /* الأجهزة اللوحية والهواتف الكبيرة */
-  input[type="text"] {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) { /* الهواتف المحمولة */
-  input[type="text"] {
-    width: 100%;
-  }
+  font-size: x-large ;
   
-  .row {
-    flex-direction: column;
-    font-size :250%
-  }
-  
+
+
+}
+body {
+  background-image: url('Mo2.jpg');
+  background-size: contain; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
+  background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
+}
+
   .myImage {
-    width: 80%; /* تقليل حجم الصورة لتناسب شاشات الهواتف الصغيرة */
-    margin: 0 auto; /* توسيط الصورة */
+    width: 588px;  /* تعيين العرض */
+    height: 249px;  /* الارتفاع يتغير تلقائياً للحفاظ على نسب الأبعاد */
   }
-}
+  
+ 
+  
+  .copyButton {
+    background-color: #4CAF50; /* اللون الأخضر */
+    color: white; /* لون النص أبيض */
+    border: none; /* إزالة الحدود */
+    padding: 10px; /* التبطين */
+    border-radius: 5px; /* تقريب الزوايا */
+    cursor: pointer; /* تغيير المؤشر عند تمرير الماوس */
+    margin-top: 10px; /* هامش علوي */
+  }
+  #backToTopButton {
+    position: fixed;
+    bottom: 31px;
+    right: 66px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #129f4f;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 44px;
+    font-size: 18px; 
+  }
+  
+  #backToTopButton:hover {
+    background-color: #555;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+      
+    }
+    .myImage {
+      width: 238px; /* تأكد من أن الصور تستجيب لحجم الشاشة */
+      height: auto;
+    }
+    #searchInput {
+      width: 207; /* استخدام العرض الكامل للشاشة */
+    }
+    #backToTopButton {
+      right: 10px; /* تعديل الموقع ليتناسب مع الشاشات الصغيرة */
+      bottom: 10px;
+    }
+  }
+  
+   
