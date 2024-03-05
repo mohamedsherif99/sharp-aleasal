@@ -2,6 +2,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   direction: rtl;
   padding: 20px;
+  text-align: center;
+
   
 }
 
@@ -20,20 +22,22 @@ input[type="text"] {
 #searchResults div {
   margin-top: 10px;
   padding: 10px;
+  font-size: xx-large ;
+
   
   
 }
 
-.row  {
+roow  {
   text-align: center;
-  font-size: x-large ;
+  font-size: xx-large ;
   
 
 
 }
 body {
   background-image: url('Mo2.jpg');
-  background-size: contain; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
+  background-size: 129%; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
   background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
 }
 
@@ -71,6 +75,11 @@ body {
   #backToTopButton:hover {
     background-color: #555;
   }
+  .h1 {
+
+    font-size: medium;
+  }
+ 
   
 
   @media screen and (max-width: 600px) {
@@ -94,11 +103,11 @@ body {
       right: 10px; /* تعديل الموقع ليتناسب مع الشاشات الصغيرة */
       bottom: 10px;
     }
-    .h1{
+    h1{
 
       font-size: medium;
     }
-     .no{
+    .no{
 
       font-size: medium;
       text-align: right;
