@@ -2934,4 +2934,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// عند التمرير، إظهار أو إخفاء الزر
+window.onscroll = function() {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("backToTopButton").style.display = "block";
+    } else {
+      document.getElementById("backToTopButton").style.display = "none";
+    }
+  }
+  
+  // عند النقر، العودة إلى الأعلى
+  document.getElementById("backToTopButton").addEventListener("click", function(){
+    document.body.scrollTop = 0; // لـ Safari
+    document.documentElement.scrollTop = 0; // لـ Chrome, Firefox, IE و Opera
+  });
+  
 
