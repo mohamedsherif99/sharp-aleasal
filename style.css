@@ -28,7 +28,7 @@ input[type="text"] {
   text-align: right; /* يضمن بدء النص من الجهة اليمين */
   margin: 10px 0; /* يضيف مسافة بادئة وختامية لكل بيت */
   background-color: #f9f9f933; /* لون الخلفية للصندوق */
-  border: 1px solid #ddd; /* تعريف الحد */
+  border: 2px solid #223f2ebf; /* تعريف الحد */
   border-radius: 56px; /* الزوايا الدائرية للصندوق */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* إضافة ظل خفيف للصندوق */
   width: 1040px;
