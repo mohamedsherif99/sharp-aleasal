@@ -4,10 +4,13 @@ body {
   padding: 20px;
   text-align: center;
 
-  
+  background-image: url('Mo2.jpg');
+  background-size: 129%; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
+  background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
 }
 
 input[type="text"] {
+  
   width: 50%;
   padding: 10px;
   margin-bottom: 20px;
@@ -17,12 +20,28 @@ input[type="text"] {
       top: 0; /* تعيين المسافة من أعلى الصفحة التي سيُثبت عندها العنصر */
       z-index: 1000; /* التأكد من أن العنصر يظهر فوق العناصر الأخرى */
       background-color: white; /* يمكن تعديله ليتناسب مع تصميمك */
-}
+    
 
+}
+.result  {
+  display: inline-block; /* يسمح بالتحكم في توسيط النص بشكل أفضل */
+  text-align: right; /* يضمن بدء النص من الجهة اليمين */
+  margin: 10px 0; /* يضيف مسافة بادئة وختامية لكل بيت */
+  background-color: #f9f9f933; /* لون الخلفية للصندوق */
+  border: 1px solid #ddd; /* تعريف الحد */
+  border-radius: 56px; /* الزوايا الدائرية للصندوق */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* إضافة ظل خفيف للصندوق */
+  width: 1040px;
+
+}
 #searchResults div {
+
+
   margin-top: 10px;
   padding: 10px;
   font-size: xx-large ;
+  border-radius: 56px; /* الزوايا الدائرية للصندوق */
+
 
   
   
@@ -34,11 +53,6 @@ roow  {
   
 
 
-}
-body {
-  background-image: url('Mo2.jpg');
-  background-size: 129%; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
-  background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
 }
 
   .myImage {
@@ -56,6 +70,7 @@ body {
     border-radius: 5px; /* تقريب الزوايا */
     cursor: pointer; /* تغيير المؤشر عند تمرير الماوس */
     margin-top: 10px; /* هامش علوي */
+    
   }
   #backToTopButton {
     position: fixed;
@@ -78,40 +93,108 @@ body {
   .h1 {
 
     font-size: medium;
+    display: inline-block;
+    text-align: right;
   }
- 
+
   
 
-  @media screen and (max-width: 600px) {
+
+
+
+  @media (max-width: 600px) {
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      direction: rtl;
+      padding: 20px;
+      text-align: center;
+    
       background-image: url('Mo2.jpg');
-      background-size: 130%; /* هذا يضمن أن الصورة تغطي الصفحة بأكملها */
-      background-position: center; /* هذا يضمن أن الصورة تتوسط الصفحة */
+      background-size: 130%; /* This ensures that the image covers the entire page */
+      background-position: center; /* This ensures that the image is centered */
     }
-    .row {
-      flex-direction: column;
-      
+    
+    input[type="text"] {
+      width: 70%; /* Use percentage value instead of fixed pixel value */
+      padding: 11px;
+      margin-bottom: 20px;
+      border: 2px solid #129f4f;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
     }
+    
+    .result  {
+      display: block; /* Use block instead of inline-block to ensure that the element takes up the full width of the screen */
+      text-align: right;
+      margin: 10px 0;
+      background-color: #f9f9f933;
+      border: 1px solid #ddd;
+      border-radius: 56px;
+      box-shadow: 2px 2px 5px rgb(0 0 0 / 80%);
+      width: 91%; /* Use percentage value instead of fixed pixel value */
+      font-weight: bold;
+
+    }
+    
+    #searchResults div {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: revert;
+      border-radius: 56px;
+
+    }
+    
+    .roow  {
+      text-align: center;
+      font-size: revert;
+    }
+    
     .myImage {
-      width: 238px; /* تأكد من أن الصور تستجيب لحجم الشاشة */
-      height: auto;
+      width: 95%; /* Use percentage value instead of fixed pixel value */
+      height: auto; /* This will maintain the aspect ratio of the image */
     }
-    #searchInput {
-      width: 207; /* استخدام العرض الكامل للشاشة */
+    
+    .copyButton {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
     }
+    
     #backToTopButton {
-      right: 10px; /* تعديل الموقع ليتناسب مع الشاشات الصغيرة */
-      bottom: 10px;
+      position: fixed;
+      bottom: 31px;
+      right: 66px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #129f4f;
+      color: white;
+      cursor: pointer;
+      padding: 16px;
+      border-radius: 44px;
+      font-size: 18px;
     }
-    h1{
-
-      font-size: medium;
+    
+    #backToTopButton:hover {
+      background-color: #555;
     }
-    .no{
-
-      font-size: medium;
+    
+    .h1 {
+      font-size: 2rem; /* Use rem units for font size */
+      display: inline-block;
       text-align: right;
     }
+    
+    @media (min-width: 600px) {
+      .result, .myImage {
+        width: 50%; /* Adjust width for larger screens */
+      }
+    }
   }
   
-   
