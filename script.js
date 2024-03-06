@@ -2883,6 +2883,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
  
 
+
+
   document.getElementById('searchInput').addEventListener('keyup', function() {
       var searchQuery = this.value.trim();
       var normalizedQuery = normalizeArabic(searchQuery);
@@ -2895,10 +2897,10 @@ document.addEventListener('DOMContentLoaded', function() {
           if (normalizedText.includes(normalizedQuery) && normalizedQuery !== "") {
               matchesCount++;
               var resultDiv = document.createElement('div');
-              // يطبق التظليل فقط على الكلمات الموجودة في استعلام البحث والتي تتطابق بالفعل مع النص
-var highlightedText = text.replace(new RegExp(`(${searchQuery})`, 'gi'), "<mark>$1</mark>");
+              resultDiv.className = 'result'; // تطبيق فئة الأنماط
+              var highlightedText = text.replace(new RegExp(`(${searchQuery})`, 'gi'), "<mark>$1</mark>");
               resultDiv.innerHTML = highlightedText;
-              
+              resultsContainer.appendChild(resultDiv);
               // إنشاء زر نسخ
               var copyBtn = document.createElement('button');
               copyBtn.textContent = 'نسخ';
@@ -2931,25 +2933,5 @@ var highlightedText = text.replace(new RegExp(`(${searchQuery})`, 'gi'), "<mark>
   }
 });
 
-
-// عند التمرير، إظهار أو إخفاء الزر
-window.onscroll = function() {
-    scrollFunction();
-  };
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("backToTopButton").style.display = "block";
-    } else {
-      document.getElementById("backToTopButton").style.display = "none";
-    }
-  }
-  
-  // عند النقر، العودة إلى الأعلى
-  document.getElementById("backToTopButton").addEventListener("click", function(){
-    document.body.scrollTop = 0; // لـ Safari
-    document.documentElement.scrollTop = 0; // لـ Chrome, Firefox, IE و Opera
-  });
-  
 
 
