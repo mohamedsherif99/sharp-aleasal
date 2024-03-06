@@ -20,7 +20,8 @@ input[type="text"] {
       top: 0; /* تعيين المسافة من أعلى الصفحة التي سيُثبت عندها العنصر */
       z-index: 1000; /* التأكد من أن العنصر يظهر فوق العناصر الأخرى */
       background-color: white; /* يمكن تعديله ليتناسب مع تصميمك */
-    
+      border-radius: 56px; /* الزوايا الدائرية للصندوق */
+
 
 }
 .result  {
@@ -98,7 +99,21 @@ roow  {
   }
 
   
+  footer {
+    text-align: center;
+    padding: 20px 0; /* تبطين أعلى وأسفل */
+    margin-top: 40px;
+    color: #333; /* لون النص */
+    margin-top: auto; /* دفع الفوتر للأسفل */
 
+  }
+  
+  .designer {
+    margin: 80px 2px 2px 4px; /* إزالة الهامش الافتراضي */
+    font-size: 16px;
+    font-weight: bold; /* جعل النص عريضًا */
+  }
+  
 
 
 
@@ -123,6 +138,8 @@ roow  {
       top: 0;
       z-index: 1000;
       background-color: white;
+      border-radius: 56px; /* الزوايا الدائرية للصندوق */
+
     }
     
     .result  {
