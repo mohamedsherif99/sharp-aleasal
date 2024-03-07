@@ -21,7 +21,7 @@ input[type="text"] {
       z-index: 1000; /* التأكد من أن العنصر يظهر فوق العناصر الأخرى */
       background-color: white; /* يمكن تعديله ليتناسب مع تصميمك */
       border-radius: 56px; /* الزوايا الدائرية للصندوق */
-
+      font-size: x-large;
 
 }
 .result  {
@@ -149,7 +149,7 @@ roow  {
       z-index: 1000;
       background-color: white;
       border-radius: 56px; /* الزوايا الدائرية للصندوق */
-
+      font-size: large;
     }
     
     .result  {
@@ -232,9 +232,13 @@ roow  {
 }
   
   .designer {
-    margin: 80px 2px 2px 4px; /* إزالة الهامش الافتراضي */
+    margin: 24px 2px 2px 4px; /* إزالة الهامش الافتراضي */
     font-size: 16px;
     font-weight: bold; /* جعل النص عريضًا */
+    .t {
+      margin: 58px 2px -4px 4px; /* إزالة الهامش الافتراضي */
+      font-size: 16px;
+      font-weight: bold; /* جعل النص عريضًا */
   }
   .re {
     font-size: 17px;
