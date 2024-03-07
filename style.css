@@ -109,11 +109,21 @@ roow  {
   }
   
   .designer {
-    margin: 80px 2px 2px 4px; /* إزالة الهامش الافتراضي */
+    margin: 15px 2px -36px 4px; /* إزالة الهامش الافتراضي */
     font-size: 16px;
     font-weight: bold; /* جعل النص عريضًا */
   }
-  
+  .t {
+    margin: 58px 2px -4px 4px; /* إزالة الهامش الافتراضي */
+    font-size: 16px;
+    font-weight: bold; /* جعل النص عريضًا */
+  }
+  .re {
+    font-size: 22px;
+    font-weight: bold; /* جعل النص عريضًا */
+    color: #8d2828;
+  }
+
 
 
 
@@ -201,13 +211,39 @@ roow  {
     #backToTopButton:hover {
       background-color: #555;
     }
+
     
-    .h1 {
-      font-size: 2rem; /* Use rem units for font size */
+    h1 {
+      font-size: 1.5rem; /* Use rem units for font size */
       display: inline-block;
       text-align: right;
+
     }
-    
+      footer {
+    text-align: center;
+    padding: 20px 0; /* تبطين أعلى وأسفل */
+    margin-top: 40px;
+    color: #333; /* لون النص */
+    margin-top: auto; /* دفع الفوتر للأسفل */
+
+  }
+  .cc {
+    display: none; /* إخفاء footer و designer على الأجهزة المحمولة */
+}
+  
+  .designer {
+    margin: 80px 2px 2px 4px; /* إزالة الهامش الافتراضي */
+    font-size: 16px;
+    font-weight: bold; /* جعل النص عريضًا */
+  }
+  .re {
+    font-size: 17px;
+    font-weight: bold; /* جعل النص عريضًا */
+    color: #8d2828;
+  }
+
+
+  
     @media (min-width: 600px) {
       .result, .myImage {
         width: 50%; /* Adjust width for larger screens */
